@@ -1,0 +1,10 @@
+.table{
+    border: 1px solid red;
+    background-color: red;
+    &__head{
+        background-color: blue;
+    }
+    &__body{
+        background-color: rgb(115, 93, 211);
+    }
+} 

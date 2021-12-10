@@ -1,0 +1,55 @@
+footer{
+    @include displeyFlexSetter(start, center);
+    background: #1B262F;
+    width: 86%;
+    height: 20px;
+    
+    
+    .logo{
+        img{
+            display: flex;
+            color: #FBFCFE;
+        }
+    }
+
+    .footer{
+        display: flex;
+        list-style: none;
+        &__item{
+            display: flex;
+            &__link{
+                color: #FBFCFE;
+                margin: 0 40px;
+                font-size: 20px;
+                opacity: 0.7;
+                text-decoration: none;
+                position: relative;
+                &:hover{
+                    opacity: 1;
+                }
+                &:active::after{
+                    opacity: 1;
+
+                }
+            }
+    
+        }
+    }
+}
+
+.footer__logo{
+    display: flex;
+    margin-left: auto;
+    margin-right: 50px;
+    >img{
+        margin: 20px;
+        &:hover{
+            background: #DA6D97;
+        }
+        &:active{
+            background: #c04574;
+        }
+    }
+   
+    
+}
